@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.white-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.project-grid {
+    grid-template-areas:
+        "a a b"
+        "a a c"
+        "e d c"
+        "f g g"
+        "f g g"
+        "h h i";
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.e {
+    grid-area: e;
+}
+
+.d {
+    grid-area: d;
+}
+
+.f {
+    grid-area: f;
+}
+
+.g {
+    grid-area: g;
+}
+
+.h {
+    grid-area: h;
+}
+
+.i {
+    grid-area: i;
+}
+
+@media only screen and (max-width:1100px) {
+    .project-grid {
+        grid-template-areas:
+            "a a "
+            "b c"
+            "e d "
+            "g g"
+            "f h"
+            "i i";
+        max-width: 95%;
+    }
+
+    .content {
+        max-width: 95%;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .project-grid {
+        grid-template-areas:
+            "a a "
+            "b b"
+            "c c"
+            "e d "
+            "g g"
+            "h h"
+            "f f"
+            "i i";
+        margin-top: 100px;
+    }
+
+    .project-grid p {
+        font-size: 24px;
+
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        padding: 16px 24px;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background-color: white;
+        width: 100%;
+    }
+
+}
+
+.content {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.animateBar1 {
+    animation: flipbar1 1s;
+    animation-fill-mode: forwards;
+}
+
+.animateBar2 {
+    animation: fadebar2 1s;
+    animation-fill-mode: forwards;
+}
+
+.animateBar3 {
+    animation: flipbar3 1s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes fadebar2 {
+    from {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+}
+
+@keyframes flipbar1 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(45deg) translate(5px, 11px);
+    }
+
+}
+
+@keyframes flipbar3 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-45deg) translate(5px, -11px);
+    }
+
+}
+
+
+.openDrawer{
+    transform: translateX(-160px);
+    transition: transform 0.5s;
+}
+
+.mobileNav{
+    right: -160px;
+}

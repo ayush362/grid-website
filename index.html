@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css" />
+    <title>Portfolio Site</title>
+</head>
+
+<body>
+    <div class="content">
+        <header class="flex justify-between py-16  navbar">
+            <div class="text-4xl font-bold">
+                Patric Star
+            </div>
+            <div class="flex justify-between w-96 items-center max-[768px]:hidden">
+                <a class="hover:underline" href="#work">Work</a>
+                <a class="hover:underline" href="#contact">Contact</a>
+                <a href="#dribble">
+                    <img class="w-6 h-6" src="images/dribble_icon.png" alt="">
+                </a>
+                <a href="#insta">
+                    <img class="w-6 h-6" src="images/insta_icon.png" alt="">
+                </a>
+                <a href="#vicon">
+                    <img class="w-6 h-6" src="images/v_icon.png" alt="">
+                </a>
+            </div>
+            <div class="h-12 w-12 hidden hamburger ">
+                <div class="bg-black h-1 w-9 m-1 rounded-xl bar1"></div>
+                <div class="bg-black h-1 w-9 m-1 rounded-xl bar2"></div>
+                <div class="bg-black h-1 w-9 m-1 rounded-xl bar3"></div>
+            </div>
+        </header>
+        <nav class="h-screen flex flex-col items-center justify-center bg-white gap-5 mobileNav w-20 fixed z-10 top-0 ">
+            <a class="hover:underline" href="#work">Work</a>
+            <a class="hover:underline" href="#contact">Contact</a>
+            <a href="#dribble">
+                <img class="w-6 h-6" src="images/dribble_icon.png" alt="">
+            </a>
+            <a href="#insta">
+                <img class="w-6 h-6" src="images/insta_icon.png" alt="">
+            </a>
+            <a href="#vicon">
+                <img class="w-6 h-6" src="images/v_icon.png" alt="">
+            </a>
+        </nav>
+        <section class="grid project-grid gap-4 w-full mx-auto">
+            <div class="relative a">
+                <img class="w-full h-full object-cover" src="images/eth.avif" alt="">
+                <p
+                    class="absolute top-0 left-0 w-full h-full flex items-center justify-center white-bg text-4xl font-bold tracking-wide opacity-0 hover:opacity-100 cursor-pointer duration-75 ease-in">
+                    VIEW PROJECT</p>
+            </div>
+            <div class=" relative b">
+                <img class="w-full h-full object-cover" src="images/alphabet.avif" alt="">
+                <p
+                    class="absolute top-0 left-0 w-full h-full flex items-center justify-center white-bg text-4xl font-bold tracking-wide opacity-0 hover:opacity-100 cursor-pointer duration-75 ease-in">
+                    VIEW PROJECT</p>
+            </div>
+            <div class=" relative c">
+                <img class="w-full h-full object-cover" src="images/traveler.avif" alt="">
+                <p
+                    class="absolute top-0 left-0 w-full h-full flex items-center justify-center white-bg text-4xl font-bold tracking-wide opacity-0 hover:opacity-100 cursor-pointer duration-75 ease-in">
+                    VIEW PROJECT</p>
+            </div>
+
+            <div class="relative d">
+                <img class="w-full h-full object-cover" src="images/cube.avif" alt="">
+                <p
+                    class="absolute top-0 left-0 w-full h-full flex items-center justify-center white-bg text-4xl font-bold tracking-wide opacity-0 hover:opacity-100 cursor-pointer duration-75 ease-in">
+                    VIEW PROJECT</p>
+            </div>
+            <div class="relative e">
+                <img class="w-full h-full object-cover" src="images/astro.avif" alt="">
+                <p
+                    class="absolute text-white top-0 left-0 w-full h-full flex items-center justify-center white-bg text-4xl font-bold tracking-wide opacity-0 hover:opacity-100 cursor-pointer duration-75 ease-in">
+                    VIEW PROJECT</p>
+            </div>
+            <div class="relative f">
+                <img class="w-full h-full object-cover" src="images/cup.avif" alt="">
+                <p
+                    class="absolute top-0 left-0 w-full h-full flex items-center justify-center white-bg text-4xl font-bold tracking-wide opacity-0 hover:opacity-100 cursor-pointer duration-75 ease-in">
+                    VIEW PROJECT</p>
+            </div>
+            <div class="relative g">
+                <img class="w-full h-full object-cover" src="images/insta.avif" alt="">
+                <p
+                    class="absolute text-white top-0 left-0 w-full h-full flex items-center justify-center white-bg text-4xl font-bold tracking-wide opacity-0 hover:opacity-100 cursor-pointer duration-75 ease-in">
+                    VIEW PROJECT</p>
+            </div>
+            <div class="relative h">
+                <img class="w-full h-full object-cover" src="images/foam.avif" alt="">
+                <p
+                    class="absolute top-0 left-0 w-full h-full flex items-center justify-center white-bg text-4xl font-bold tracking-wide opacity-0 hover:opacity-100 cursor-pointer duration-75 ease-in">
+                    VIEW PROJECT</p>
+            </div>
+            <div class="relative i">
+                <img class="w-full h-full object-cover" src="images/dimensional.avif" alt="">
+                <p
+                    class="absolute text-white top-0 left-0 w-full h-full flex items-center justify-center white-bg text-4xl font-bold tracking-wide opacity-0 hover:opacity-100 cursor-pointer duration-75 ease-in">
+                    VIEW PROJECT</p>
+            </div>
+        </section>
+        <footer class="text-center p-16">
+            <p>
+                Designed and built by Patrick star in Binkni Bottom
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
