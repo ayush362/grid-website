@@ -827,17 +827,17 @@ body {
 }
 
 .animateBar1 {
-  animation: flipbar1 1s;
+  animation: flipbar1 0.5s;
   animation-fill-mode: forwards;
 }
 
 .animateBar2 {
-  animation: fadebar2 1s;
+  animation: fadebar2 0.5s;
   animation-fill-mode: forwards;
 }
 
 .animateBar3 {
-  animation: flipbar3 1s;
+  animation: flipbar3 0.5s;
   animation-fill-mode: forwards;
 }
 
@@ -875,11 +875,15 @@ body {
 
 .openDrawer{
   transform: translateX(-160px);
-  transition: transform 0.5s;
+  transition: transform 0.3s;
 }
 
 .mobileNav{
   right: -160px;
+}
+
+.navbar{
+  z-index: 20;
 }
 
 .hover\:underline:hover {
